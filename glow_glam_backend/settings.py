@@ -76,7 +76,7 @@ DB_ENGINE = os.environ.get('DB_ENGINE', 'sqlite').lower()
 if DB_ENGINE == 'mysql':
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
+            'ENGINE': 'django.db.backends.postgresql',
             'NAME': os.environ.get('DB_NAME', 'glow_and_glam_db'),
             'USER': os.environ.get('DB_USER', 'root'),
             'PASSWORD': os.environ.get('DB_PASSWORD', ''),
